@@ -6,18 +6,14 @@ using namespace std;
 int main(){
     string s;
     cin>>s;
-    bool flag = true; //found
-    for(int i=0;i<s.length();i++){
+    bool flag = false; //notfound
+    for(int i=0;i<s.length()-3;i++){
        if(s.substr(i,3)=="sad"){
         flag = true;
         cout<<i<<" "; 
         break;
        }
-       else {
-        flag = false;
-        cout<<-1;
-        break;
-       }
     }
+    if(flag==false) cout<<-1;
     return 0;
 }
