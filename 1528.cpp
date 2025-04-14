@@ -7,10 +7,14 @@ int main(){
     int n = s.length();
     int arr[n];
     for(int i=0;i<n;i++){
-        cin>>n;
+        cin>>arr[i];
+    }
+    string ans[n];
+    for(int i=0;i<n;i++){
+        ans[arr[i]]  = s[i];
     }
     for(int i=0;i<n;i++){
-         
+        cout<<ans[i];
     }
     return 0;
 }
