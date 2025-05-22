@@ -11,7 +11,7 @@ int main(){
     int low=0;
     int high = (n-1);
     bool flag = false; //notfound
-    
+
     while(low<=high){
         int mid = low + (high-low)/2;
         if(arr[mid]==target){
@@ -27,5 +27,5 @@ int main(){
             break;
         } 
     }
-    return -1;
+    return 0;
 }
