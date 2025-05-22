@@ -11,7 +11,10 @@ int main(){
         int high=(n-1);
         while(low<=high){
             int mid = low + (high-low)/2;
-            if(arr[mid]==target) ansF = mid;
+            if(arr[mid]==target){
+                ansF = mid;
+                high = mid-1;
+            } 
             else if(arr[mid]>target) high = mid-1;
             else if(arr[mid]<target) low = mid+1;
         }
@@ -20,7 +23,10 @@ int main(){
         int hi=(n-1);
         while(lo<=hi){
             int mid = lo + (hi-lo)/2;
-            if(arr[mid]==target) ansL = mid;
+            if(arr[mid]==target){
+                 ansL = mid;
+                 lo = mid+1;
+            } 
             else if(arr[mid]>target) hi = mid-1;
             else if(arr[mid]<target) lo = mid+1;
         }
