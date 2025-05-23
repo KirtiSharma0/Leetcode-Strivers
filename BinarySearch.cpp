@@ -15,17 +15,13 @@ int main(){
     while(low<=high){
         int mid = low + (high-low)/2;
         if(arr[mid]==target){
-             flag = true;
-             cout<<"found";
-             break;
+            flag = true;
+            break;
         } 
         else if(arr[mid]>target) high = mid-1;
         else if(arr[mid]<target) low = mid+1;
-        else{
-            flag = false;
-            cout<<"not found";
-            break;
         } 
-    }
+    if(flag==true) cout<<"found";
+    else cout<<"NotFound";
     return 0;
 }
