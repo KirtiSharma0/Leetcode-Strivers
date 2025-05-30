@@ -1,3 +1,5 @@
+//it should be an sorted array
+
 #include<iostream>
 using namespace std;
 int main(){
