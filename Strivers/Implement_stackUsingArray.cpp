@@ -6,6 +6,8 @@ public:
     int arr[5];
     int idx = -1;
     void push(int value){
+        if(idx==4) cout<<"stack is full";
+        
         idx++;
         arr[idx] = value;
     }
